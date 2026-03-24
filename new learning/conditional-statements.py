@@ -1,68 +1,52 @@
 """
-Docstring for new learning.conditional-statements
+  Developers have to make decisions all the time. How do you intend to approach this problem?
+  This topic is usually called control flow in python
+  In Python, you can control the flow of your program using
+  + if
+  + elif
+  + else
 """
 
-# if 2 > 1:
-#   print("This is a True statement")
+# Comparison Operators
+## This lets you ask if something equals something else or if they're greater than or less than a value etc.
 
-# Getting inputs from a user
-# user_input = input("How much is that doggy in the window?: "); # Takes in user's input as stdin
-# user_input = int(user_input); # Casts to an integer
+# Operator        Meaning
+# >          Greater than- This is True if the left operand is greater than the right
+# <          Less than- This is True if the left operand is less than the right one
+# ==         Equal to- This is True only when both operands are equal
+# !=         Not equal to- This is True if the operands are not equal
+# >=         Greater than or equal to- This is True when the left operand is greater than or equal to the right
+# <=         Less than or equal to- This is True when the left operand is less than or equal to the right
 
-# if (user_input < 10):
-#   print("Cheap doggy")
-# elif 10 <= user_input <= 20:
-#   print("I'd still pay that!");
-# else:
-#   print("Uhhhh, Too expensive!");
+a = 2
+b = 3
 
-# Boolean operations
-"""
-  or - If any condition is true, Run
-  and - If all conditions are true, Run
-  not - if it's false Run
-"""
+print(f"Is a equals to b: {a == b}")
+print(f"Is a not equals to b: {a != b}")
+print(f"Is a greater than b: {a > b}")
+print(f"Is a less than b: {a < b}")
+print(f"Is a greater than or equals to b: {a >= b}")
+print(f"Is a less than or equals to b: {a <= b}")
 
-# Examples
-x = 10;
-y = 12;
+# Creating a Simple Conditional
+authenticated = True
+if authenticated:
+  print("Come on in. You're authenticated 😊")
 
-if (x <= 10 and y == 12):
-  print("The or check passed!")
+# Branching conditional statements
+AUTHENTICATED = False
+if AUTHENTICATED:
+  print("You're logged in")
 else:
-  print("The statement was False")
+  print("Please login")
 
-my_list = [1,2,3,4];
-x = 10;
+# Logical operators
+## and- Only True if both the operands are true
+## or- True if either of the operands are true
+## not- True if the operand is false
 
-if x not in my_list: 
-  print("'x' is not in the list, so this is True.")
-
-# or testung 'not' with !=
-# if x != my_list: --- valid
-if x != 11:
-  print("me")
-
-# Checking for nothing
-empty_list = [];
-empty_tuple = ();
-empty_dictionary = {};
-empty_string = '';
-nothing = None;
-
-# if empty_list == []:
-# if empty_list.__len__() == 0:
-if not empty_list:
-  print("This list is empty")
-
-# if empty_tuple == ():
-# if empty_tuple.__len__() == 0:
-if not empty_tuple:
-  print("This is an empty tuple")
-
-# if empty_string == '':
-if not empty_string:
-  print("This is an empty string")
-
-if not nothing:
-  print("There's nothing")
+# Special operators
+## is- True when the operands are identical (i.e. have the same id)
+## is not- True when the operands are not identical
+## in- True when the value is in a collection (list, tuple, set, etc.)
+## not in- True when the value is not in a collection
